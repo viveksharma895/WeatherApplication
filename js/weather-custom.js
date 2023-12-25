@@ -13,9 +13,7 @@ async function checkWeather(city){
         document.querySelector(".weather").style.display = "none";
     }
     else{
-
         let data = await response.json();
-
         document.querySelector(".city").innerHTML = data.name;
         document.querySelector(".temp").innerHTML = Math.round(data.main.temp) + '°C';
         document.querySelector(".humidity").innerHTML = data.main.humidity + ' %';
@@ -39,7 +37,6 @@ async function checkWeather(city){
         else if(data.weather[0].main == "Snow"){
             weatherIcon.src = "images/snow.webp"
         }
-
         document.querySelector(".weather").style.display = 'block';
         document.querySelector(".error").style.display = "none";
         }
@@ -48,7 +45,7 @@ async function checkWeather(city){
 searchBtn.addEventListener("click", ()=>{
     checkWeather(searchBox.value);
 });
-
+// Enter Trigger Code using Button
 $(document).ready(function(){
     $(".inputfeild").keydown(function (event) { 
      if (event.which == 13) { 
@@ -57,7 +54,8 @@ $(document).ready(function(){
      } 
     });
 });
-
+// Enter Trigger Code using Button
+// Null Value Validation
 $('#locationtrigger').click(function(){
 	if($('#inputfeild').val() == ''){
 		document.querySelector(".nummerror").style.display = 'block';
@@ -66,3 +64,4 @@ $('#locationtrigger').click(function(){
 		document.querySelector(".nummerror").style.display = 'none';
 	}
  });
+ // Null Value Validation

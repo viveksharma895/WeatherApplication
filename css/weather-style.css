@@ -1,10 +1,11 @@
-*{font-family: 'Poppins', sans-serif;}
+*{
+    font-family: 'Poppins', sans-serif;
+}
 body{
-    background-image: url(../images/bg.jpg);
+    background-image: url(../images/background_bg.webp);
     background-position: top;
     background-repeat: no-repeat;
 }
-
 h2.heaader-tittle, h2.heaader-tittle::-webkit-scrollbar-thumb  {
     color: #fff;
     font-weight: 300;
