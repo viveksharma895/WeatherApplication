@@ -49,6 +49,7 @@ searchBtn.addEventListener("click", ()=>{
     checkWeather(searchBox.value);
 });
 
+// Enter Trigger Code using Button
 $(document).ready(function(){
     $(".inputfeild").keydown(function (event) { 
      if (event.which == 13) { 
@@ -57,7 +58,9 @@ $(document).ready(function(){
      } 
     });
 });
+// Enter Trigger Code using Button
 
+// Null Value Validation
 $('#locationtrigger').click(function(){
 	if($('#inputfeild').val() == ''){
 		document.querySelector(".nummerror").style.display = 'block';
@@ -66,3 +69,4 @@ $('#locationtrigger').click(function(){
 		document.querySelector(".nummerror").style.display = 'none';
 	}
  });
+ // Null Value Validation
