@@ -4,7 +4,6 @@ body{
     background-position: top;
     background-repeat: no-repeat;
 }
-
 h2.heaader-tittle, h2.heaader-tittle::-webkit-scrollbar-thumb  {
     color: #fff;
     font-weight: 300;
