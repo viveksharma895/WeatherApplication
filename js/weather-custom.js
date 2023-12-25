@@ -45,7 +45,6 @@ async function checkWeather(city){
 searchBtn.addEventListener("click", ()=>{
     checkWeather(searchBox.value);
 });
-
 // Enter Trigger Code using Button
 $(document).ready(function(){
     $(".inputfeild").keydown(function (event) { 
@@ -56,7 +55,6 @@ $(document).ready(function(){
     });
 });
 // Enter Trigger Code using Button
-
 // Null Value Validation
 $('#locationtrigger').click(function(){
 	if($('#inputfeild').val() == ''){

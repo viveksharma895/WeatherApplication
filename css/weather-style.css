@@ -1,6 +1,8 @@
-*{font-family: 'Poppins', sans-serif;}
+*{
+    font-family: 'Poppins', sans-serif;
+}
 body{
-    background-image: url(../images/bg.webp);
+    background-image: url(../images/background_bg.webp);
     background-position: top;
     background-repeat: no-repeat;
 }
